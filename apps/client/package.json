@@ -1,0 +1,19 @@
+{
+  "name": "client",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "dev": "bun dist/clientd.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "discord.js": "^14.15.3",
+    "dotenv-cli": "^7.4.2",
+    "env-var": "^7.5.0"
+  }
+}

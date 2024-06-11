@@ -1,0 +1,28 @@
+{
+  "name": "bot",
+  "private": true,
+  "scripts": {
+    "build": "turbo build",
+    "dev": "dotenv turbo run dev --parallel --",
+    "lint": "turbo lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+  },
+  "devDependencies": {
+    "@bot/eslint-config": "*",
+    "@bot/typescript-config": "*",
+    "prettier": "^3.2.5",
+    "turbo": "latest",
+    "typescript": "^5.4.5"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "packageManager": "bun@1.1.12",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "dependencies": {
+    "dotenv-cli": "^7.4.2"
+  }
+}
